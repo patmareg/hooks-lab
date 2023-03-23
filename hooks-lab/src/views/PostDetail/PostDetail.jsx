@@ -13,7 +13,6 @@ const PostDetail = () => {
   // }, [])
 
   useEffect(() => {
-    console.log('slay')
     getDetail(id)
       .then(response => {
         setDetail(response)
@@ -24,13 +23,13 @@ const PostDetail = () => {
 
   return (
     <div className='PostDetail'>
-      {console.log(id)}
-      {!loading && <p>Loading...</p>}
-      {loading && <div className="card-body">
+      {loading && <p>Loading...</p>}
+      {!loading && <div className="card-body ms-5">
         <h5 className="card-title">{detail.title}</h5>
         <p className="card-text">{detail.body}</p>
+        <h6>Comments</h6>
         {detail.comments.map(comment => {
-          return <p>{comment}</p>
+          return <p key={comment.id}>{comment.name}</p>
         })}
       </div>}
     </div>

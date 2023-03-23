@@ -5,5 +5,5 @@ export const getPosts = () => {
 }
 
 export const getDetail = (id) => {
-  return http.get(`/posts/${id}/comments`)
+  return http.get(`/posts/${id}?_embed=comments`)
 }

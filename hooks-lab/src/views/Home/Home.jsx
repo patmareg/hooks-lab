@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Post from '../../components/Post/Post';
 import { getPosts } from '../../services/PostService';
+import './Home.css'
 
 const Home = () => {
   const [posts, setPosts] = useState([])
