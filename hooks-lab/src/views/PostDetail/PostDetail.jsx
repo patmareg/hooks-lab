@@ -22,7 +22,7 @@ const PostDetail = () => {
   }, [id])
 
   return (
-    <div className='PostDetail'>
+    <div className='PostDetail' style={{height: '100vh'}}>
       {loading && <p>Loading...</p>}
       {!loading && <div className="card-body ms-5">
         <h5 className="card-title">{detail.title}</h5>

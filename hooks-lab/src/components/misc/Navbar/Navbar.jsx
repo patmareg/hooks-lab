@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
             </li>
           </ul>
-          <button className="btn btn-outline-success" onClick={toggleTheme}>Toggle theme</button>
+          <button className="btn btn-outline-info" onClick={toggleTheme}>Toggle theme</button>
         </div>
       </div>
     </nav>
